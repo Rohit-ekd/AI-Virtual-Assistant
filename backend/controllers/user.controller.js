@@ -17,28 +17,7 @@ export const getCurrentUser = async (req, res) => {
   }
 };
 
-// export const updateAssistant = async (req, res) => {
-//   try {
-//     // 7 images ka path direct database mein store karna hai or jo image upload use multer or cloudinary ke throught karenge
-//     const { assistantName, imageUrl } = req.body;
-//     let assistantImage;
-//     if (req.file) {
-//       assistantImage = await uploadOnCloudinary(req.file.path);
-//     } else {
-//       assistantImage = imageUrl; // agar image upload nahi hui to jo image url diya hai usi ko use karna hai
-//     }
 
-//     const user = await User.findByIdAndUpdate(
-//       req.userId,
-//       { assistantImage, assistantName },
-//       { new: true }
-//     ).select("-password");
-//     return res.status(200).json(user);
-//   } catch (err) {
-//     console.error(err);
-//     return res.status(500).json({ message: "Update Assistant Error" });
-//   }
-// };
 
 export const updateAssistant = async (req, res) => {
   try {
@@ -174,3 +153,4 @@ export const askToAssistant = async (req, res) => {
     return res.status(500).json({ response: "Ask Assistant Error" });
   }
 };
+
