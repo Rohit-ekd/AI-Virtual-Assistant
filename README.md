@@ -1,4 +1,4 @@
-🤖 AI Virtual Assistant
+#🤖 AI Virtual Assistant
 
 An interactive AI-powered Virtual Assistant built with modern web technologies.
 It supports speech-to-text recognition, text-to-speech responses, authentication & authorization, database connectivity, and external image storage via Cloudinary.
