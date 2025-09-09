@@ -27,8 +27,8 @@ export const signup = async (req, res) => {
         const token = await  genToken(newUser._id);
         res.cookie('token', token, {     
             httpOnly: true,
-            secure:false,
-            sameSite: 'strict',
+            secure:true,
+            sameSite: "None",
             maxAge: 10 * 24 * 60 * 60 * 1000 // 10 days
         }); 
         res.status(201).json(newUser);
@@ -63,8 +63,8 @@ export const signin = async (req, res) => {
     res.cookie("token", token, {
       httpOnly: true,
       maxAge: 10 * 24 * 60 * 60 * 1000,
-      sameSite: "strict",
-      secure: false
+      sameSite: "None",
+      secure: true
     });
 
     return res.status(200).json({
@@ -91,3 +91,4 @@ export const logout = async (req, res) => {
 // This code defines the authentication controller for user signup, login, and logout functionalities.
 
 // It uses bcrypt for password hashing and JWT for token generation. The controller interacts with the User model to manage user data in the database.
+
