@@ -4,7 +4,7 @@ import { IoEye, IoEyeOff } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { userDataContext } from "../context/UserContext";
 import axios from "axios";
-import { set } from "mongoose";
+// import { set } from "mongoose";
 
 function SignUp() {
   const { serverUrl ,userData,setUserData} = useContext(userDataContext);
@@ -114,3 +114,4 @@ function SignUp() {
 
 }
 export default SignUp;
+
