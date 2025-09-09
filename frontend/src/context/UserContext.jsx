@@ -4,7 +4,7 @@ import { useEffect, useState, createContext } from "react";
 export const userDataContext = createContext();
 
 function UserContext({ children }) {
-  const serverUrl = "http://localhost:3000";
+  const serverUrl = "https://ai-virtual-assistant-pzwr.onrender.com";
   const [userData, setUserData] = useState(null);
   const [frontendImage, setFrontendImage] = useState(null);
   const [backendImage, setBackendImage] = useState(null);
@@ -62,3 +62,4 @@ function UserContext({ children }) {
 }
 
 export default UserContext;
+
