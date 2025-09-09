@@ -1,5 +1,5 @@
 import React, { useState, useRef, useContext } from "react";
-import Card from "../component/card";
+import Card from "../component/Card";
 import img1 from "../assets/a1.jpg";
 import img2 from "../assets/a2.jpg";
 import img3 from "../assets/a3.jpg";
@@ -81,3 +81,4 @@ function Customize() {
 }
 
 export default Customize;
+
