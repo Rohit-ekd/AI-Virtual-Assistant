@@ -89,4 +89,5 @@ export const logout = async (req, res) => {
    }
 };
 // This code defines the authentication controller for user signup, login, and logout functionalities.
+
 // It uses bcrypt for password hashing and JWT for token generation. The controller interacts with the User model to manage user data in the database.
