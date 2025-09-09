@@ -12,7 +12,7 @@ import userRouter from "./routes/user.route.js";
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://ai-virtual-assistant-frontend-0wlg.onrender.com",
   credentials: true
 }));
 
@@ -29,3 +29,4 @@ app.listen(port, () => {
   connectDB();
   console.log(`Server is running on http://localhost:${port}`);
 });
+
